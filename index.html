@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fernando de M. Rocha — Desenvolvedor</title>
+  <meta name="description" content="Portfólio profissional de Fernando de M. Rocha — técnico e júnior em desenvolvimento de sistemas." />
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --accent:#06b6d4; --muted:#98a0ad; --glass: rgba(255,255,255,0.03);
+      --radius:16px; --maxw:1100px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#071021 0%,var(--bg) 100%);color:#e6eef6;line-height:1.5}
+    .container{max-width:var(--maxw);margin:36px auto;padding:28px}
+    header{display:flex;gap:24px;align-items:center}
+    .avatar{flex:0 0 160px;height:160px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(4,8,15,0.6)}
+    .avatar svg{width:78px;height:78px;opacity:0.98}
+    .hero{flex:1}
+    h1{margin:0;font-size:28px}
+    .subtitle{color:var(--muted);margin-top:6px}
+
+    main{display:grid;grid-template-columns:1fr 340px;gap:28px;margin-top:28px}
+    .card{background:var(--card);border-radius:var(--radius);padding:20px;box-shadow:0 6px 24px rgba(2,6,12,0.6)}
+
+    .about p{margin:0 0 10px;color:#dbe8f2}
+    .meta{color:var(--muted);font-size:14px}
+
+    .skills li{list-style:none;margin:12px 0}
+    .bar{height:10px;background:var(--glass);border-radius:999px;overflow:hidden}
+    .bar > span{display:block;height:100%;background:linear-gradient(90deg,var(--accent),#7c3aed)}
+
+    .timeline{padding-left:0;margin:0}
+    .timeline li{list-style:none;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.03)}
+    .projects .project{margin-bottom:12px}
+
+    .contact a, .cta{display:inline-block;padding:10px 14px;border-radius:10px;text-decoration:none}
+    .cta{background:linear-gradient(90deg,var(--accent),#7c3aed);color:#021020;font-weight:600}
+
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13px}
+
+    @media(max-width:900px){main{grid-template-columns:1fr}header{flex-direction:row} .avatar{flex:0 0 96px;height:96px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar" aria-hidden>
+        <svg viewBox="0 0 100 100"><rect width="100" height="100" rx="12" fill="rgba(255,255,255,0.06)"/><text x="50" y="58" font-size="36" text-anchor="middle" fill="white" font-weight="700" font-family="monospace">FR</text></svg>
+      </div>
+      <div class="hero">
+        <h1>Fernando de M. Rocha</h1>
+        <div class="subtitle meta">Técnico e Júnior em Desenvolvimento de Sistemas — 17 anos — Natural de Bagé (16 de maio de 2008)</div>
+        <div style="margin-top:12px">
+          <a class="cta" href="#contato">Entrar em contato</a>
+          <a style="margin-left:10px" class="contact" href="#sobre">Ver sobre</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <article class="card about" id="sobre">
+          <h2>Sobre mim</h2>
+          <p>Sou Fernando, técnico em informática e desenvolvedor júnior de sistemas com foco em soluções web. Tenho experiência prática em desenvolvimento front-end e back-end, criando interfaces responsivas e integrando sistemas com bases de dados. Gosto de escrever código limpo e de trabalhar em times ágeis.</p>
+          <p class="meta">Local: Bagé — Disponibilidade para vagas/estágios, freelance e projetos acadêmicos.</p>
+        </article>
+
+        <article class="card" style="margin-top:16px">
+          <h2>Habilidades</h2>
+          <ul class="skills">
+            <li><div style="display:flex;justify-content:space-between"><strong>HTML & CSS</strong><span class="meta">Avançado</span></div><div class="bar"><span style="width:90%"></span></div></li>
+            <li><div style="display:flex;justify-content:space-between"><strong>JavaScript</strong><span class="meta">Intermediário</span></div><div class="bar"><span style="width:70%"></span></div></li>
+            <li><div style="display:flex;justify-content:space-between"><strong>PHP & MySQL</strong><span class="meta">Intermediário</span></div><div class="bar"><span style="width:65%"></span></div></li>
+            <li><div style="display:flex;justify-content:space-between"><strong>Controle de versão (Git)</strong><span class="meta">Intermediário</span></div><div class="bar"><span style="width:75%"></span></div></li>
+            <li><div style="display:flex;justify-content:space-between"><strong>Boas práticas & testes</strong><span class="meta">Em desenvolvimento</span></div><div class="bar"><span style="width:50%"></span></div></li>
+          </ul>
+        </article>
+
+        <article class="card projects" style="margin-top:16px">
+          <h2>Projetos & Experiência</h2>
+          <div class="project"><strong>Sistema de Solicitação de Documentos</strong><div class="meta">Formulários, integração com planilha (Google Sheets), validação e upload.</div></div>
+          <div class="project"><strong>Sistema de Reserva de Equipamentos</strong><div class="meta">PHP, MySQL e interface responsiva.</div></div>
+        </article>
+
+        <article class="card" style="margin-top:16px">
+          <h2>Formação</h2>
+          <ul class="timeline">
+            <li><strong>Técnico em Informática</strong><div class="meta">Formação técnica (concluído)</div></li>
+            <li><strong>Formação complementar</strong><div class="meta">Cursos online em desenvolvimento web.</div></li>
+          </ul>
+        </article>
+      </section>
+
+      <aside>
+        <div class="card">
+          <h3>Contato</h3>
+          <p class="meta">Quer conversar sobre vaga, projeto ou estágio?</p>
+          <p>Email: fernando@example.com</p>
+          <p class="meta">Tel/WhatsApp: +55 (xx) xxxxx-xxxx</p>
+          <div style="margin-top:14px"><a class="cta" href="#">Baixar CV</a></div>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h3>Resumo rápido</h3>
+          <p class="meta">Nome: Fernando de M. Rocha</p>
+          <p class="meta">Idade: 17 anos</p>
+          <p class="meta">Natural: Bagé</p>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <p>© Fernando de M. Rocha — Desenvolvedor Júnior</p>
+    </footer>
+  </div>
+</body>
+</html>
